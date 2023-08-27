@@ -1,0 +1,149 @@
+h3 {
+    color: white;
+    font-family: Verdana;
+    font-size: 16px;
+}
+
+h4 {
+    color: rgb(50, 0, 0);
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+
+.title {
+
+    font-family: 'Lucida Sans';
+
+    background-color: black;
+}
+
+.container {
+    width: 500px;
+    margin: 50px auto;
+    /* background-color: #ffe100;*/
+    margin-block-start: auto;
+    padding: 100px;
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: #000000;
+    align-content: center;
+}
+
+/* .transbox {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 5px solid black;
+    opacity: 0.9;
+}*/
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.body {
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipMKn7kwIUquGYzOIkB6sIo62UjkU-kXm9thrFCr=s1360-w1360-h1020');
+    background-repeat: no repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 15px;
+}
+
+.bodydiv {
+    position: relative;
+}
+
+.a {
+    position: absolute;
+    margin-left: 10px;
+    top: 8px;
+    left: 16px;
+    padding-top: 30px;
+}
+
+.bh1 {
+    color: rgb(2, 0, 0);
+    font-size: 47px;
+    text-align: center;
+    font-family: Verdana;
+    position: absolute;
+    top: 50%;
+    width: 100%
+}
+
+.bottom {
+    background-color: rgb(255, 217, 0);
+    padding-left: 30px;
+    padding-bottom: none;
+    line-height: 1;
+    padding-top: 0px;
+    position: relative;
+    height: 20vh;
+}
+
+.footext {
+    text-align: left;
+    padding: 5px;
+    padding-top: none;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    padding-right: none;
+    width: 50%;
+}
+
+.pb {
+    text-align: left;
+    padding: 5px;
+    list-style-type: none;
+    float: right;
+    color: rgb(50, 0, 0);
+    font-size: 12px;
+    font-family: Verdana;
+    line-height: 1.5;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 50%;
+    font-weight: bold;
+    border-left: 3px solid rgb(50, 0, 0);
+    padding-right: 5px;
+    padding-left: 48px
+}
