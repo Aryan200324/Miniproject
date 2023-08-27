@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <title class="title">
+        Lost and Found Portal for DKTE </title>
+    <link rel="icon" type="image/png" href="https://www.dkte.ac.in/images/dkte-logo.png">
+
+</head>
+
+<body class="body">
+    <div class="bodydiv">
+
+        <a href="https://www.dkte.ac.in" class="a">
+            <img src="https://www.dkte.ac.in/images/dkte-logo.png" height="50px">
+        </a>
+
+        <h1 class="bh1" title="Lost and Found">
+            LOST AND FOUND PORTAL
+        </h1>
+
+    </div>
+    <main style="align-content: center;">
+        <div class="transbox">
+            <div class="container">
+                <h2>Login Form</h2>
+                <form action="" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                    <input type="submit" name="submit" value="Login">
+                    <div class="error">
+                        <php>
+                            if(isset($_GET['error'])){
+                            echo $_GET['error'];
+                            }
+                            ?>
+                        </php>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <div style=" height: 50vh;"></div>
+
+
+    <div class="bottom">
+
+        <div class="foottext">
+
+            <h3>DKTE Society's Textile and Engineering Institute,Ichalkaranji</h3>
+            <h3>Dist: Kolhapur(Maharashtra) India.</h3>
+
+            <h4>
+                An Empowered Autonomous Institute Affiliated to Shivaji University, Kolhapur.
+            </h4>
+        </div>
+
+
+        <p class="pb">
+            This web application is
+            to help Students/Faculty who may lose
+            their commodity inside the Institution premises,
+            to Login and search for them online, and legally claim them if they find it. The system is authentic and
+            has the ability to record information of
+            each user and its activity on this portal, and keeps a record of all lost and claimed items in its
+            database.
+            The admin panel of this software manages all the records of data which is operated by an appointed in
+            charge.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

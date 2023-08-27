@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        h3 {
+            color: white;
+            font-family: Verdana;
+            font-size: 16px;
+        }
+
+        h4 {
+            color: rgb(50, 0, 0);
+            font-size: 12px;
+            font-family: Verdana;
+        }
+    </style>
+    <style type="text/css">
+        .title {
+
+            font-family: 'Lucida Sans';
+
+            background-color: black;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            /* background-color: #ffe100;*/
+            margin-block-start: auto;
+            padding: 100px;
+            border-radius: 5px;
+
+            font-weight: bold;
+            color: #000000;
+            align-content: center;
+        }
+
+        /* .transbox {
+            width: 500px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 5px solid black;
+            opacity: 0.9;
+        }*/
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+
+
+
+    <title class="title">
+        Lost and Found Portal for DKTE </title>
+    <link rel="icon" type="image/png" href="https://www.dkte.ac.in/images/dkte-logo.png">
+
+</head>
+
+<body style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipMKn7kwIUquGYzOIkB6sIo62UjkU-kXm9thrFCr=s1360-w1360-h1020');background-repeat:no repeat;background-attachment:scroll;
+    background-size: cover; margin: 15px;">
+    <div style="position: relative;">
+
+        <a href="https://www.dkte.ac.in" style="position: absolute; margin-left: 10px; 
+            top: 8px; left: 16px; padding-top: 30px;">
+            <img src="https://www.dkte.ac.in/images/dkte-logo.png" height="50px">
+        </a>
+
+        <h1 style="color: rgb(2, 0, 0); font-size: 47px; text-align: center; font-family: Verdana;position: absolute; top: 50%;width: 100%;"
+            title="Lost and Found">
+            LOST AND FOUND PORTAL
+        </h1>
+
+    </div>
+    <main style="align-content: center;">
+        <div class="transbox">
+            <div class="container">
+                <h2>Login Form</h2>
+                <form action="" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                    <input type="submit" name="submit" value="Login">
+                    <div class="error">
+                        <php>
+                            if(isset($_GET['error'])){
+                            echo $_GET['error'];
+                            }
+                            ?>
+                        </php>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <div style=" height: 50vh;"></div>
+
+
+    <div style="background-color: rgb(255, 217, 0); padding-left: 30px; padding-bottom: none;
+             line-height: 1; padding-top: 0px; position: relative; height: 20vh;">
+
+        <div style="text-align: left; padding: 5px; padding-top: none;
+             position: absolute; top: 8px; left: 16px; padding-right: none; width: 50%;">
+
+            <h3>DKTE Society's Textile and Engineering Institute,Ichalkaranji</h3>
+            <h3>Dist: Kolhapur(Maharashtra) India.</h3>
+
+            <h4>
+                An Empowered Autonomous Institute Affiliated to Shivaji University, Kolhapur.
+            </h4>
+        </div>
+
+
+        <p
+            style="text-align: left; padding: 5px; list-style-type: none; float: right; color: rgb(50, 0, 0); font-size: 12px;
+                font-family: Verdana; line-height: 1.5; position: absolute;top: 8px;
+                right: 16px; width: 50%; font-weight: bold; border-left: 3px solid rgb(50, 0, 0); padding-right: 5px; padding-left: 48px;  ">
+            This web application is
+            to help Students/Faculty who may lose
+            their commodity inside the Institution premises,
+            to Login and search for them online, and legally claim them if they find it. The system is authentic and
+            has the ability to record information of
+            each user and its activity on this portal, and keeps a record of all lost and claimed items in its
+            database.
+            The admin panel of this software manages all the records of data which is operated by an appointed in
+            charge.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
